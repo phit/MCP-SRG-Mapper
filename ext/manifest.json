@@ -1,10 +1,10 @@
 {
     "name": "MCP SRG Mapper",
-    "version": "0.2.2",
-    "author": "bspkrs, Lunatrius",
+    "version": "0.3.0",
+    "author": "bspkrs, Lunatrius, phit",
     "manifest_version": 2,
     "description": "Applies MCP mappings to SRG named code snippets on github repos and paste services.",
-    "homepage_url": "https://github.com/bspkrs/MCP-SRG-Mapper",
+    "homepage_url": "https://github.com/phit/MCP-SRG-Mapper",
     "icons": {
         "16": "icons/icon16.png",
         "24": "icons/icon24.png",
@@ -42,7 +42,7 @@
                 "css/chosen.min.css"
             ],
             "js": [
-                "js/jquery-2.1.1.min.js",
+                "js/jquery-3.3.1.min.js",
                 "js/chosen.jquery.min.js",
                 "js/toastr.min.js",
                 "src/inject.js"
@@ -58,5 +58,10 @@
             "src/background.js"
         ],
         "persistent": false
+    },
+    "applications": {
+      "gecko": {
+        "id": "mcp-to-srg@phit.link"
+      }
     }
 }

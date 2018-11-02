@@ -362,7 +362,7 @@
         function addControls()
         {
             var target = settings.getControlsTarget();
-            if (target.size() != 1)
+            if (target.length != 1)
             {
                 toastr.error('I don\'t know where to insert the controls :(');
                 return;
@@ -455,7 +455,7 @@
 
             var codeLines = settings.getCodeElements();
 
-            if (codeLines.size() > 0 && !controlsAdded)
+            if (codeLines.length > 0 && !controlsAdded)
             {
                 codeLines.each(function (index, line)
                     {
@@ -477,7 +477,7 @@
             var codeLines = settings.getCodeElements();
             pollCount++;
 
-            if ((controlsAdded && codeLines.size() == 0) || (!controlsAdded && codeLines.size() > 0))
+            if ((controlsAdded && codeLines.length == 0) || (!controlsAdded && codeLines.length > 0))
             {
                 clearInterval(intervalId);
                 pollCount = 0;
