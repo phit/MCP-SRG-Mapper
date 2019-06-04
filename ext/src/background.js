@@ -38,7 +38,7 @@ function error()
         console.error(chrome.runtime.getManifest()['name'] + ': ' + arguments[0], Array.prototype.slice.call(arguments).slice(1));
 }
 
-var baseUrl = 'http://files.minecraftforge.net/maven/de/oceanlabs/mcp/';
+var baseUrl = 'https://files.minecraftforge.net/maven/de/oceanlabs/mcp/';
 
 chrome.runtime.onMessage.addListener(fetch);
 

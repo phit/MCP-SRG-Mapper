@@ -1,6 +1,6 @@
 {
     "name": "MCP SRG Mapper",
-    "version": "0.3.0",
+    "version": "0.3.2",
     "author": "bspkrs, Lunatrius, phit",
     "manifest_version": 2,
     "description": "Applies MCP mappings to SRG named code snippets on github repos and paste services.",
@@ -16,7 +16,7 @@
     "permissions": [
         "storage",
         "unlimitedStorage",
-        "http://files.minecraftforge.net/maven/de/oceanlabs/mcp/*",
+        "https://files.minecraftforge.net/maven/de/oceanlabs/mcp/*",
         "http://export.mcpbot.bspk.rs/*"
     ],
     "content_scripts": [
@@ -26,7 +26,7 @@
                 "https://github.com/*/FML/*",
                 "https://gist.github.com/*",
                 "https://paste.feed-the-beast.com/view/*",
-                "http://paste.feed-the-beast.com/view/*",
+                "https://paste.feed-the-beast.com/view/*",
                 "http://openeye.openmods.info/crashes/*",
                 "https://openeye.openmods.info/crashes/*",
                 "https://paste.kde.org/*",
